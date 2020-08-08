@@ -1,27 +1,30 @@
-﻿using System;
+﻿using efc3.Models;
+using System;
 
 namespace efc3
 {
     class App
     {
+        public ContosouniversityContext _contosouniversityContext { get; private set; }
      
-        public App()
+        public App(ContosouniversityContext contosouniversityContext)
         {
-         //   _todoContext = todoContext;
+            _contosouniversityContext =  contosouniversityContext;
         }
+
 
         public void AddItem()
         {
-            /*     using (var db = _todoContext.CreateDbContext(null))
+                 using (var db = _contosouniversityContext)
                  {
-                     var todo = new Todo();
-                     todo.item = "sdsd";
+                     var todo = new Todos();
+                     todo.Item = "sdsd";
 
                      db.Todos.Add(todo);
                      db.SaveChanges();
                  }
                  Console.WriteLine("Data Created!");
-                 Console.ReadLine(); */
+                 Console.ReadLine(); 
         }
     }
 }

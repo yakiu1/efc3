@@ -27,6 +27,7 @@ namespace efc3.Models
 
 
         public virtual DbSet<Todos> Todos { get; set; }
+        public virtual DbSet<Haha> Haha { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -10,7 +10,6 @@ namespace efc3.Models
         public string Item { get; set; }
         public bool IsDeleted { get; set; }
         public string TestColumn { get; set; }
-
         public DateTime Today { get; set; }
         public DateTime UpdateDay { get; set; }
     }
