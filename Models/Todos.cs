@@ -12,5 +12,6 @@ namespace efc3.Models
         public string TestColumn { get; set; }
 
         public DateTime Today { get; set; }
+        public DateTime UpdateDay { get; set; }
     }
 }
